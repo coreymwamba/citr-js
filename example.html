@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>citr.js - Technical Examples</title>
+<meta charset="utf-8" />
+<meta name="author" content="Corey Mwamba" />
+<style type="text/css">
+body {font-family:"Linux Libertine","Linux Baskerville",Baskerville,"Nimbus Roman","Times New Roman",serif; font-size:100%;width:70%;margin:2em auto;padding:4em}
+h1,h2,h3,h4,h5,h6,dt {font-weight: 700; margin: 0em 0em 0.2em 0em}
+h2,h4,h6,dt {font-style:italic}
+h1 {font-size: 2.6em; text-align: center; white-space:pre-line}
+h2 {font-size: 2.3em}
+h3 {font-size: 1.8em}
+h3,h5 {text-decoration: underline}
+p, ul, ol {font-size: 1.3em}
+a {-o-transition: color 1.25s;-moz-transition: color 1.25s;-webkit-transition: color 1.25s;transition: color 1.25s; font-weight: 700; text-decoration: none}
+a:link {color: blue}
+a:visited {color: green}
+a:hover, a:active {color: red}
+blockquote {border-left: 4px solid #bbb; padding-left: 8px}
+blockquote cite {display: block; text-align: right; font-style: italic; font-size: 0.8em}
+ol {list-style-position: outside}
+pre {border: 2px dashed #888; white-space: pre-wrap; word-wrap: break-word; padding: 10px}
+figcaption {text-align: center; font-size: 1.1em}
+figure {border-bottom: 1px solid #ccc; padding: 12px}
+</style>
+<meta name="description" content="Exposing the potentially useful cite attribute in blockquotes and in-line quotations." />
+<meta name="keywords" content="blockquote,cite,javascript,citr.js" />
+</head>
+<body>
+<h1>citr.js</h1>
+<h2>Technical Examples</h2>
+<figure>
+<blockquote cite="http://www.worldcat.org/title/music-of-africa/oclc/841677" title="J. H. Kwabena Nketia, 'The Music of Africa' (1974), p. 35"> 
+<p>In African societies, participation in music may be a voluntary activity or an obligation imposed by one's membership in a social group. Such a social group may be a descent group (a group of people who trace their ancestry back to the same person), or it may be any group based on the broader societal classifications of age, sex, interest or occupation.</p>
+</blockquote>
+<figcaption>Full quotation, book, author, title and page cited</figcaption>
+</figure>
+<figure>
+<blockquote class="footnote" cite="http://www.worldcat.org/title/music-of-africa/oclc/841677" title="J. H. Kwabena Nketia, 'The Music of Africa' (1974), p. 35"> 
+<p>In African societies, participation in music may be a voluntary activity or an obligation imposed by one's membership in a social group. Such a social group may be a descent group (a group of people who trace their ancestry back to the same person), or it may be any group based on the broader societal classifications of age, sex, interest or occupation.</p>
+</blockquote>
+<figcaption>Full quotation, link to citation as footnote</figcaption>
+</figure>
+<figure>
+<blockquote title="Claude Debussy">
+<p>There is no theory. You have only to listen. Pleasure is the law. I love music passionately. And because l love it, I try to free it from barren traditions that stifle it. It is a free art gushing forth - an open-air art, boundless as the elements, the wind, the sky, the sea. It must never be shut in and become an academic art.</p>
+</blockquote>
+<figcaption>Full quotation, person cited</figcaption>
+</figure>
+<figure>
+<p>J. H. Nketia said that <q class="indirect" cite="http://www.worldcat.org/title/music-of-africa/oclc/841677"  title="J. H. Kwabena Nketia, 'The Music of Africa' (1974), p. 35">playing music in African societies may either be voluntary or an obligation by belonging to a certain group or family</q>. We explored this idea by following fifty groups from the Copperbelt region of Zambia over a five-year period.</p>
+<figcaption>Paraphrase, citation as "marginalia"</figcaption>
+</figure>
+<figure>
+<p>J. H. Nketia said that <q class="harvard indirect" cite="http://www.worldcat.org/title/music-of-africa/oclc/841677"  title="Kwabena Nketia 1974, p.35">playing music in African societies may either be voluntary or an obligation by belonging to a certain group or family</q>. We explored this idea by following fifty groups from the Copperbelt region of Zambia over a five-year period.</p>
+<figcaption>Paraphrase, citation as parentheses</figcaption>
+</figure>
+<figure>
+<p>Debussy <q class="footnote indirect" cite="http://www.worldcat.org/title/encyclopedia-of-quotations-about-music/oclc/611526492" title="Nat Shapiro, 'An Encyclopedia of Quotations About Music' (1981) p.268">wanted to free music from older traditions</q>. He saw it as <q class="footnote"  title="ibid.">a free art gushing forth - an open-air art, boundless as the elements, the wind, the sky, the sea.</q></p>
+<figcaption>Paraphrase followed by direct quoting, citation as footnote in main body of document. Quotation marks toggled by CSS class.</figcaption>
+</figure>
+
+
+<script type="text/javascript" src="citr.js"></script>
+</body>
+</html>
