@@ -97,6 +97,7 @@ var iq = document.getElementsByTagName('q');
 				quoteAft.appendChild(aftLink);
 				aftLink.setAttribute('href', '#cite-' + (i + 1));
 				aftLink.innerText = i + 1;
+				aftLink.innerHTML = i + 1;
 				quoteAft.appendChild(aftLink);
 				quoteAft.innerHTML += ']';
                                 if (quote.nodeName == 'Q') {
