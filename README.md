@@ -6,7 +6,7 @@ The *cite* attribute is not presented to the reader by many browsers, even thoug
 **citr.js** is JavaScript that exposes this information along with the title attribute in \<blockquote\> and \<q\> elements 
 to create meaningful references. 
 
-citr.js is made available under the GNU Affero General Public Licence.
+citr.js is made available under the Open Software License 3.0.
 
 usage
 =====
